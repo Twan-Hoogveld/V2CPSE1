@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+#Random
+*.c
+_cc_flags
+_cpp_flags
+_linker_flags
+*.bin
+*.map
+*.ld
+*.elf
