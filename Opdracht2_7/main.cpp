@@ -22,24 +22,22 @@ const char one[] =
     "NumberOne:d=16,o=5,b=168:4f.,8c6,16b5,16c6,16b5,16c6,8b5,8c6,4g#5,4f.,8f,8g#5,8c6,4c#6,4g#5,4c#6,4d#6,8c6,8c#6,"
     "8c6,8c#6,2c6";
 
-int main(void) {
+int main() {
   namespace target = hwlib::target;
-  auto lsp = target::pin_out(target::pins::d7);
+  auto lsp = target::pin_out(target::pins::d6);
   auto p = note_player_gpio(lsp);
-  hwlib::wait_ms(10);
-
-  if (0) {
+  if (false) {
     auto fe = fur_elise();
     fe.play(p);
   }
-  if (1) {
+  if (true) {
     auto own = auto_melody();
     own.play(p);
   }
-
-  if (0) rtttl_play(p, sos);
-  if (0) rtttl_play(p, let_it_be);
-  if (0) rtttl_play(p, muppets);
-  if (0) rtttl_play(p, rickroll);
-  if (0) rtttl_play(p, one);
+  if (false) rtttl_play(p, sos);
+  if (false) rtttl_play(p, let_it_be);
+  if (false) rtttl_play(p, muppets);
+  if (false) rtttl_play(p, rickroll);
+  if (false) rtttl_play(p, one);
+  return 1;
 }

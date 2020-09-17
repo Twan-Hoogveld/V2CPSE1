@@ -3,12 +3,6 @@
 
 #include "note_player.hpp"
 
-// ===========================================================================
-//
-// simple note player for a speaker connected to a GPIO pin
-//
-// ===========================================================================
-
 class note_player_gpio : public note_player {
 private:   
    hwlib::pin_out & lsp;

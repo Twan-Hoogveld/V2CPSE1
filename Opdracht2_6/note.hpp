@@ -1,16 +1,8 @@
 #ifndef _NOTE_HPP
 #define _NOTE_HPP
 
-// ===========================================================================
-//
-// frequencies of standard notes
-//
-// ===========================================================================
-
 class note {
 public:
-
-   // from https://www.seventhstring.com/resources/notefrequencies.html
    static const int A4  = 440;
    static const int A4s = 466;
    static const int B4  = 494;
